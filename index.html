@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RENEE Cosmetics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>RENEE</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">Collections</a>
+      <a href="#">Offers</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Shop by Category</h2>
+
+    <div class="category-buttons">
+      <button onclick="showCategory('lipsticks')">Lipsticks</button>
+      <button onclick="showCategory('eyes')">Eyes</button>
+      <button onclick="showCategory('face')">Face</button>
+      <button onclick="showCategory('skincare')">Skincare</button>
+    </div>
+
+    <!-- LIPSTICKS -->
+    <section id="lipsticks" class="category-section active">
+      <h3>Lipsticks</h3>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/lipstick1.jpg" alt="Lipstick 1">
+          <h4>FAB 5 in 1 Lipstick</h4>
+          <p>₹750</p>
+        </div>
+        <div class="product-card">
+          <img src="images/lipstick2.jpg" alt="Lipstick 2">
+          <h4>Mad Matte Lipstick</h4>
+          <p>₹399</p>
+        </div>
+        <div class="product-card">
+          <img src="images/lipstick3.jpg" alt="Lipstick 3">
+          <h4>Stay With Me Lipstick</h4>
+          <p>₹450</p>
+        </div>
+        <div class="product-card">
+          <img src="images/lipstick4.jpg" alt="Lipstick 4">
+          <h4>Mini Matte Combo</h4>
+          <p>₹599</p>
+        </div>
+        <div class="product-card">
+          <img src="images/lipstick5.jpg" alt="Lipstick 5">
+          <h4>Silk Strokes Crayon</h4>
+          <p>₹499</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EYES -->
+    <section id="eyes" class="category-section">
+      <h3>Eyes</h3>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/eye1.jpg" alt="Eye 1">
+          <h4>Bold Kohl Kajal</h4>
+          <p>₹199</p>
+        </div>
+        <div class="product-card">
+          <img src="images/eye2.jpg" alt="Eye 2">
+          <h4>See Me Shine Eyeshadow</h4>
+          <p>₹450</p>
+        </div>
+        <div class="product-card">
+          <img src="images/eye3.jpg" alt="Eye 3">
+          <h4>Define Eye Pen</h4>
+          <p>₹499</p>
+        </div>
+        <div class="product-card">
+          <img src="images/eye4.jpg" alt="Eye 4">
+          <h4>Fab 3 in 1 Eye Pen</h4>
+          <p>₹599</p>
+        </div>
+        <div class="product-card">
+          <img src="images/eye5.jpg" alt="Eye 5">
+          <h4>Volumizing Mascara</h4>
+          <p>₹349</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FACE -->
+    <section id="face" class="category-section">
+      <h3>Face</h3>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/face1.jpg" alt="Face 1">
+          <h4>Face Base Foundation</h4>
+          <p>₹699</p>
+        </div>
+        <div class="product-card">
+          <img src="images/face2.jpg" alt="Face 2">
+          <h4>Glow Blush</h4>
+          <p>₹349</p>
+        </div>
+        <div class="product-card">
+          <img src="images/face3.jpg" alt="Face 3">
+          <h4>Shimmer Highlighter</h4>
+          <p>₹499</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKINCARE -->
+    <section id="skincare" class="category-section">
+      <h3>Skincare</h3>
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="images/skincare1.jpg" alt="Skincare 1">
+          <h4>Hydrating Serum</h4>
+          <p>₹799</p>
+        </div>
+        <div class="product-card">
+          <img src="images/skincare2.jpg" alt="Skincare 2">
+          <h4>Night Glow Cream</h4>
+          <p>₹899</p>
+        </div>
+        <div class="product-card">
+          <img src="images/skincare3.jpg" alt="Skincare 3">
+          <h4>SPF 50 Sunscreen</h4>
+          <p>₹649</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 RENEE Cosmetics. All rights reserved.<br>
+      Follow us on <a href="https://www.instagram.com/your_insta_id" target="_blank">Instagram</a>
+    </p>
+  </footer>
+
+  <script>
+    function showCategory(category) {
+      const sections = document.querySelectorAll(".category-section");
+      sections.forEach(section => section.classList.remove("active"));
+      document.getElementById(category).classList.add("active");
+    }
+  </script>
+
+</body>
+</html>
